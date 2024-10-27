@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ox_bot - Blender Add-on Components</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blender Add-on Components - ox_bot</h1>
+    <p>This page displays a list of components used in Blender add-on development.</p>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Component</th>
+            <th>Description</th>
+            <th>Blender API Equivalent</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Panel</td>
+            <td>Blender's UI section for tools and settings, where add-ons add functionalities.</td>
+            <td><code>bpy.types.Panel</code></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Column</td>
+            <td>Arranges elements vertically within panels.</td>
+            <td><code>layout.column()</code></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Row</td>
+            <td>Arranges elements horizontally within panels.</td>
+            <td><code>layout.row()</code></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Dropdown</td>
+            <td>Provides a list of options for users to select.</td>
+            <td><code>layout.prop()</code> or <code>layout.menu()</code></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Button</td>
+            <td>A clickable element that triggers a command.</td>
+            <td><code>layout.operator()</code></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Label</td>
+            <td>Text element used to provide information within panels.</td>
+            <td><code>layout.label()</code></td>
+        </tr>
+        <!-- Additional rows can be added similarly -->
+    </table>
+</body>
+</html>
